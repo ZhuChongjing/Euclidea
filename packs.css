@@ -1,0 +1,1449 @@
+* {
+    --bottom-item-width: calc((100% - 840px)/2);
+}
+
+.bottom-left-img {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: var(--bottom-item-width);
+    max-width: 200px;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.bottom-right-img {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: var(--bottom-item-width);
+    max-width: 120px;
+    height: auto;
+    display: none;
+    z-index: 999;
+}
+
+.apple-button {
+    transform: translateY(calc(-100% - 10px));
+}
+
+p.title {
+    color: #fff;
+    font-size: 30px;
+    line-height: 0px;
+    font-family: "华文中宋";
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 以下是官方样式（有部分更改） */
+
+.app[_ngcontent-c0] {
+    height: 100vh;
+}
+
+.app-background[_ngcontent-c0] {
+    position: fixed;
+    width: 3600px;
+    height: 3600px;
+    opacity: 0.3;
+    background-image: url(/assets/bglines.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.app-background-first[_ngcontent-c0] {
+    bottom: -1810px;
+    right: -1300px;
+    -ms-transform: rotate(54deg);
+    transform: rotate(54deg);
+}
+
+.app-background-second[_ngcontent-c0] {
+    top: -1810px;
+    left: -1300px;
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+
+@keyframes rotate {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes arrow-down {
+    0% {}
+
+    100% {
+        opacity: .2;
+        transform: translateY(20%);
+    }
+}
+
+@keyframes arrow-top {
+    0% {
+        transform: translateY(0) rotate(180deg);
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(20%) rotate(180deg);
+    }
+}
+
+@keyframes star {
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modal-help[_ngcontent-c1] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 120;
+    transition: .2s;
+}
+
+.modal-help.active[_ngcontent-c1] {
+    opacity: 1;
+    visibility: visible;
+    transition: 0s;
+}
+
+.modal-help.scroll-bottom[_ngcontent-c1] .scroll-down[_ngcontent-c1] {
+    display: none;
+}
+
+.modal-help.scroll-bottom[_ngcontent-c1] .scroll-top[_ngcontent-c1] {
+    display: block;
+}
+
+.modal-help.dark[_ngcontent-c1] {
+    transition: .3s;
+}
+
+.modal-help.dark[_ngcontent-c1] .modal-layout[_ngcontent-c1] {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-layout[_ngcontent-c1] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.modal-inner[_ngcontent-c1] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+    top: 10%;
+    bottom: auto;
+    width: 550px;
+    height: 580px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    transition: cubic-bezier(0.17, 0.67, 0.61, 1.1) 0.2s;
+    -ms-transform-origin: center 38%;
+    transform-origin: center 38%;
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    box-shadow: 0px 23px 57px -20px #000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.active[_ngcontent-c1] .modal-inner[_ngcontent-c1] {
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.header[_ngcontent-c1] {
+    color: #cdcdcd;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 17px 35px;
+    background-color: #2d3336;
+    border-radius: 10px 10px 0 0;
+    top: -10px;
+    text-shadow: 0 1px 2px #000;
+}
+
+.close-icon[_ngcontent-c1] {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: 5px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.scroll-down[_ngcontent-c1] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-image: url(/assets/ScrollDownIcon.svg);
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.star-image[_ngcontent-c1] {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    left: 0;
+}
+
+.star-image[_ngcontent-c1]:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.star-block[_ngcontent-c1] {
+    position: relative;
+    height: 40px;
+    padding: 1px 0;
+}
+
+.star-block[_ngcontent-c1]>img[_ngcontent-c1] {
+    height: 30px;
+    position: absolute;
+    left: -35px;
+    margin-top: -6px;
+}
+
+.star-check[_ngcontent-c1] {
+    top: -1px;
+}
+
+.help-window[_ngcontent-c1] {
+    margin-top: 40px;
+    height: 496px;
+    overflow-y: scroll;
+    font-family: "Roboto", sans-serif;
+}
+
+.help-description-title[_ngcontent-c1] {
+    padding-top: 10px;
+    padding-left: 35px;
+    font-weight: 600;
+}
+
+.help-description[_ngcontent-c1] {
+    padding: 0 35px;
+    line-height: normal;
+}
+
+.help-description[_ngcontent-c1]>p[_ngcontent-c1] {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.help-description-stars[_ngcontent-c1] {
+    margin: 15px 0;
+}
+
+.stars-block[_ngcontent-c1] {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: block;
+    padding-left: 60px;
+}
+
+.hand-block[_ngcontent-c1] {
+    padding: 7px 0;
+    position: relative;
+}
+
+.tool-icon-absolute[_ngcontent-c1] {
+    position: absolute;
+    z-index: -1;
+    left: -60px;
+    top: 12px;
+    width: 48px;
+    height: 48px;
+}
+
+.tool-icon-absolute[_ngcontent-c1]:hover {
+    background-position: 0 0;
+}
+
+.icon-Explore[_ngcontent-c1] {
+    height: 40px;
+    width: 40px;
+    background-image: url(/assets/ExploreBtn.svg);
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+}
+
+.icon-HandTool[_ngcontent-c1] {
+    background: url(/assets/HandTool.svg) no-repeat center;
+    background-position: 0 0;
+}
+
+.support-mail[_ngcontent-c1] {
+    padding: 5px;
+    display: block;
+    text-align: center;
+    color: #5AA0FF;
+}
+
+table.tools-list[_ngcontent-c1] {
+    position: relative;
+    z-index: -1;
+    border-collapse: collapse;
+    background: #fff;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+table.tools-list[_ngcontent-c1] tr[_ngcontent-c1] {
+    border-bottom: 1px solid #ddd;
+}
+
+table.tools-list[_ngcontent-c1] tr[_ngcontent-c1] td[_ngcontent-c1]:last-of-type {
+    padding: 0 10px;
+}
+
+table.tools-list[_ngcontent-c1] tr[_ngcontent-c1] .tool-icon[_ngcontent-c1] {
+    width: 48px;
+    height: 48px;
+    margin: 10px 15px;
+}
+
+table.tools-list[_ngcontent-c1] tr[_ngcontent-c1] .tool-icon[_ngcontent-c1]:hover {
+    background-position: 0 0;
+}
+
+table.tools-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
+    border-bottom: none;
+}
+
+table.hotKeys-list[_ngcontent-c1] {
+    position: relative;
+    z-index: -1;
+    border-collapse: collapse;
+    background: #fff;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1] {
+    border-bottom: 1px solid #ddd;
+}
+
+table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1] td[_ngcontent-c1] {
+    padding: 10px;
+    line-height: 17px;
+}
+
+table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1] .tool-icon[_ngcontent-c1] {
+    width: 48px;
+    height: 48px;
+    margin: 10px 15px;
+}
+
+table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1] .tool-icon[_ngcontent-c1]:hover {
+    background-position: 0 0;
+}
+
+table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
+    border-bottom: none;
+}
+
+.main[_ngcontent-c2] {
+    height: 100vh;
+    min-width: 990px;
+}
+
+.main-background[_ngcontent-c2] {
+    position: fixed;
+    width: 3600px;
+    height: 3600px;
+    opacity: 0.3;
+    background-image: url(/assets/bglines.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-background-first[_ngcontent-c2] {
+    bottom: -1810px;
+    right: -1300px;
+    -ms-transform: rotate(54deg);
+    transform: rotate(54deg);
+}
+
+.main-background-second[_ngcontent-c2] {
+    top: -1810px;
+    left: -1300px;
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+
+.layout[_ngcontent-c2] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+
+.layout.active[_ngcontent-c2] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header[_ngcontent-c3] {
+    position: fixed;
+    z-index: 9;
+    padding: 10px;
+    background-repeat: repeat;
+    background-color: #2d3336;
+    width: 100%;
+    min-width: 940px;
+    box-shadow: 0 0 20px 0 #000;
+}
+
+.logo[_ngcontent-c3] {
+    margin-right: 10px;
+    float: left;
+    width: 356px;
+    height: 40px;
+}
+
+.logo-img[_ngcontent-c3] {
+    max-width: 222px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.settings[_ngcontent-c3] {
+    margin: 0 10px;
+    float: left;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-image: url(/assets/SettingsBtnWhite.svg);
+    background-position: 0 -80px;
+    background-repeat: no-repeat;
+}
+
+.settings[_ngcontent-c3]:hover {
+    background-position: 0 -40px;
+}
+
+.settings[_ngcontent-c3]:active {
+    background-position: 0 0;
+}
+
+.divider[_ngcontent-c3] {
+    margin-top: -10px;
+    float: left;
+    margin-bottom: -10px;
+    width: 2px;
+    background: #1e2327;
+    height: 60px;
+}
+
+.buttons[_ngcontent-c3] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+    width: 292px;
+    height: 40px;
+}
+
+.button[_ngcontent-c3] {
+    display: inline-block;
+    height: 40px;
+    background-position: 0 0;
+}
+
+.button-apple-en[_ngcontent-c3] {
+    width: 120px;
+    background-image: url(/assets/AppStoreBadgeWhite_US.svg);
+}
+
+.button-google-en[_ngcontent-c3] {
+    float: right;
+    width: 120px;
+    background-image: url(/assets/GooglePlayBadgeWhite_US.svg);
+}
+
+.button-apple-ru[_ngcontent-c3] {
+    width: 120px;
+    background-image: url(/assets/AppStoreBadgeWhite_RU.svg);
+}
+
+.button-google-ru[_ngcontent-c3] {
+    float: right;
+    width: 120px;
+    background-image: url(/assets/GooglePlayBadgeWhite_RU.svg);
+}
+
+.button[_ngcontent-c3]:hover {
+    background-position: 0 -40px;
+}
+
+.count[_ngcontent-c3] {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.count-box[_ngcontent-c3] {
+    margin: 5px 10px 0 0;
+    padding: 0 8px 0 5px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    border-radius: 10px;
+}
+
+.count-inner-bold[_ngcontent-c3] {
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.sign-in-out[_ngcontent-c3] {
+    margin-right: -10px;
+    padding: 0 30px;
+    display: inline-block;
+    float: right;
+    color: #3189ff;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-shadow: 0 1px 2px #000;
+}
+
+.sign-in-out[_ngcontent-c3]:hover {
+    color: #5AA0FF;
+}
+
+.star[_ngcontent-c3] {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    float: left;
+    background-image: url(/assets/StarIcon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.total-count[_ngcontent-c3] {
+    display: inline-block;
+    color: #fff;
+    line-height: 30px;
+}
+
+.modal[_ngcontent-c4] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 125;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    z-index: 10;
+}
+
+.modal.active[_ngcontent-c4] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-layout[_ngcontent-c4] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-spinner[_ngcontent-c4] {
+    transition: 1s;
+}
+
+.settings[_ngcontent-c4] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    width: 450px;
+    top: 10%;
+    bottom: auto;
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    transition: .2s;
+    box-shadow: 0 5px 15px #000;
+    height: 530px;
+    -ms-transform: translateY(200%);
+    transform: translateY(200%);
+}
+
+.active[_ngcontent-c4] .settings[_ngcontent-c4] {
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.content[_ngcontent-c4] {
+    white-space: nowrap;
+    transition: linear .2s;
+    height: 86%;
+}
+
+.content.right[_ngcontent-c4] {
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.content-wrapper[_ngcontent-c4] {
+    height: 100%;
+    overflow: hidden;
+}
+
+.content.activeSpinner[_ngcontent-c4] {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content.activeSpinner[_ngcontent-c4] .item[_ngcontent-c4] {
+    position: relative;
+    z-index: -1;
+}
+
+.text[_ngcontent-c4] {
+    margin: 41px 38px 41px;
+    line-height: 20px;
+    text-align: center;
+    white-space: normal;
+}
+
+.header[_ngcontent-c4],
+.footer[_ngcontent-c4] {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #2d3336;
+}
+
+.header[_ngcontent-c4] {
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer[_ngcontent-c4] {
+    position: absolute;
+    height: 42px;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    color: #cdcdcd;
+    font-size: 12px;
+}
+
+.title[_ngcontent-c4] {
+    color: #cdcdcd;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 50px;
+    text-shadow: 0 1px 2px #000;
+    display: none;
+}
+
+.title.active[_ngcontent-c4] {
+    display: block;
+}
+
+.close[_ngcontent-c4] {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: 5px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.copyright[_ngcontent-c4],
+.version[_ngcontent-c4] {
+    display: inline-block;
+    line-height: 42px;
+}
+
+.copyright[_ngcontent-c4] {
+    margin-left: 15px;
+}
+
+.version[_ngcontent-c4] {
+    margin-right: 15px;
+    float: right;
+}
+
+.items[_ngcontent-c4] {
+    display: none;
+    padding-bottom: 42px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.items.active[_ngcontent-c4] {
+    display: inline-block;
+}
+
+.item[_ngcontent-c4] {
+    padding: 12px 0;
+    margin: 15px auto 0;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid #e6e6e6;
+}
+
+.item[_ngcontent-c4]:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item[_ngcontent-c4]:active {
+    box-shadow: none;
+    transition: .1s;
+}
+
+.item-lang[_ngcontent-c4] {
+    padding: 0;
+}
+
+.item-lang.active[_ngcontent-c4] {
+    pointer-events: none;
+}
+
+.item-lang.active[_ngcontent-c4] .item-link[_ngcontent-c4] {
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    background-image: url(/assets/StarCheckIconBlue.svg);
+    background-size: 25px;
+}
+
+.item-link[_ngcontent-c4] {
+    padding: 12px 0;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.hidden[_ngcontent-c4] {
+    display: none;
+}
+
+.invisible[_ngcontent-c4] {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+}
+
+.inner-layout[_ngcontent-c4] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    transition: 1s;
+}
+
+.spinner[_ngcontent-c4]+.inner-layout[_ngcontent-c4] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.spinner.invisible[_ngcontent-c4]+.inner-layout[_ngcontent-c4] {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+}
+
+.back-btn[_ngcontent-c4] {
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 34px;
+    transition: .1s;
+    backface-visibility: hidden;
+}
+
+.back-btn.active[_ngcontent-c4] {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal[_ngcontent-c5] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 125;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    z-index: 10;
+}
+
+.modal.active[_ngcontent-c5] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-layout[_ngcontent-c5] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.window[_ngcontent-c5] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    width: 450px;
+    top: 10%;
+    bottom: auto;
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    transition: .2s;
+    box-shadow: 0 5px 15px #000;
+    padding-bottom: 20px;
+}
+
+.active[_ngcontent-c5] .window[_ngcontent-c5] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header[_ngcontent-c5] {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-image: url(/assets/darkTextureplus1Mini.png);
+}
+
+.header[_ngcontent-c5] {
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.title[_ngcontent-c5] {
+    color: #cdcdcd;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 50px;
+    text-shadow: 0 1px 2px #000;
+}
+
+.close[_ngcontent-c5] {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: 5px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.buttons[_ngcontent-c5] {
+    text-align: center;
+}
+
+.button[_ngcontent-c5] {
+    margin: 0 38px;
+    padding: 12px 24px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid #e6e6e6;
+}
+
+.button[_ngcontent-c5]:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button[_ngcontent-c5]:active {
+    box-shadow: none;
+}
+
+@media (max-width: 1050px) {
+    .bottom-right-img { display: block; }
+    .button-apple-en[_ngcontent-c3] { display: none; }
+    .button-google-en[_ngcontent-c3] { display: none; }
+}
+
+.question[_ngcontent-c5] {
+    margin: 30px 38px 16px;
+    line-height: 22px;
+}
+
+.wrapper[_ngcontent-c6] {
+    position: relative;
+    margin-right: -10px;
+    display: inline-block;
+    float: right;
+    color: #3189ff;
+    height: 40px;
+    line-height: 40px;
+    text-shadow: 0 1px 2px #000;
+}
+
+.wrapper[_ngcontent-c6] .sign-in[_ngcontent-c6] {
+    padding: 0 30px;
+}
+
+.wrapper[_ngcontent-c6] .user-block[_ngcontent-c6] {
+    width: 190px;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.wrapper[_ngcontent-c6] .user-block[_ngcontent-c6] .avatar[_ngcontent-c6] {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/ProfileIcon.svg);
+    background-position: center;
+}
+
+.wrapper[_ngcontent-c6] .user-block[_ngcontent-c6] .user-name[_ngcontent-c6] {
+    margin-left: 55px;
+    width: 124px;
+    color: #5AA0FF;
+    font-size: 16px;
+    display: inline-block;
+    transition: .2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapper[_ngcontent-c6] .user-block[_ngcontent-c6] .user-name[_ngcontent-c6] span[_ngcontent-c6] {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrapper[_ngcontent-c6] .user-block[_ngcontent-c6] .dropdown-arrow[_ngcontent-c6] {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    background-image: url(/assets/ArrowDown.svg);
+    float: left;
+}
+
+.wrapper[_ngcontent-c6] .user-block[_ngcontent-c6]:hover .user-name[_ngcontent-c6] {
+    text-decoration: underline;
+}
+
+.cursor-pointer[_ngcontent-c6] {
+    cursor: pointer;
+}
+
+.dropdown[_ngcontent-c6] {
+    position: absolute;
+    top: 51px;
+    width: 100%;
+    text-align: center;
+    background-image: url(/assets/darkTextureplus1Mini.png);
+    box-shadow: 0 0 1px #000;
+    transition: .2s;
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+}
+
+.dropdown.active[_ngcontent-c6] {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.dropdown[_ngcontent-c6]:hover .link[_ngcontent-c6] {
+    text-decoration: underline;
+}
+
+.dropdown[_ngcontent-c6] .sign-out-icon[_ngcontent-c6] {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/LogOut.svg);
+    background-position: center;
+}
+
+.dropdown[_ngcontent-c6] .profile-icon[_ngcontent-c6] {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/ProfileIcon.svg);
+    background-position: center;
+}
+
+.dropdown.js-dropdown-logout[_ngcontent-c6] {
+    top: 110px;
+}
+
+.dropdown.js-dropdown-profile[_ngcontent-c6] {
+    border-radius: 0;
+}
+
+.link[_ngcontent-c6] {
+    text-align: left;
+    padding: 9px 0;
+    padding-left: 55px;
+    display: block;
+    color: #5AA0FF;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.link-sign-in[_ngcontent-c6] {
+    margin-left: 0;
+    padding: 0;
+}
+
+.link[_ngcontent-c6]:hover {
+    text-decoration: underline;
+}
+
+.link[_ngcontent-c6]:hover-text {
+    text-decoration: underline;
+}
+
+.packs-box[_ngcontent-c7] {
+    margin: 0 auto;
+    padding-top: 85px;
+    height: 100%;
+    max-width: 840px;
+}
+
+.pack[_ngcontent-c7] {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background-image: url(/assets/PackIcon.svg);
+    margin: 0 20px 40px 20px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #4c4c4c;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: .9;
+    transition: opacity .25s ease-in-out;
+    text-decoration: none;
+}
+
+.pack[_ngcontent-c7]:hover {
+    opacity: 1;
+}
+
+.pack-icon[_ngcontent-c7] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 125px;
+}
+
+.pack-icon-wrapper[_ngcontent-c7] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.pack-title[_ngcontent-c7] {
+    position: absolute;
+    right: 0;
+    bottom: 32px;
+    left: 0;
+    margin: 0 auto;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.pack-locked-title[_ngcontent-c7] {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    left: 0;
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #e6e6e6;
+}
+
+.pack.locked[_ngcontent-c7] {
+    background-image: url(/assets/PackLockedIcon.svg);
+    cursor: default;
+}
+
+.pack.locked[_ngcontent-c7] .pack-locked-title[_ngcontent-c7] {
+    display: block;
+}
+
+.pack.locked[_ngcontent-c7] .stars-count[_ngcontent-c7],
+.pack.locked[_ngcontent-c7] .star-pack[_ngcontent-c7] {
+    display: none;
+}
+
+.pack.locked[_ngcontent-c7] .pack-title[_ngcontent-c7] {
+    color: #787c7f;
+}
+
+.stars-count[_ngcontent-c7] {
+    margin-top: 31px;
+    margin-left: 7px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+}
+
+.stars-earned[_ngcontent-c7] {
+    margin-right: 2px;
+    font-weight: 700;
+}
+
+.stars-total[_ngcontent-c7] {
+    margin-left: 2px;
+}
+
+.star-pack[_ngcontent-c7] {
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.levels-box[_ngcontent-c8] {
+    position: relative;
+    padding-top: 40px;
+    height: 100%;
+}
+
+.levels-box-inner[_ngcontent-c8] {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 120px;
+    height: 100%;
+    max-width: 852px;
+}
+
+.pack-label[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    top: 60px;
+    text-align: center;
+}
+
+.title[_ngcontent-c8] {
+    font-family: "Roboto Slab", sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.icon[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+    top: -19px;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
+    opacity: .6;
+}
+
+.button-back-icon[_ngcontent-c8] {
+    position: fixed;
+    top: 120px;
+    left: 10px;
+}
+
+.pack-button[_ngcontent-c8] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    left: auto;
+    right: -35px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.previous[_ngcontent-c8] {
+    left: -35px;
+    right: auto;
+}
+
+.button-pack-icon[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    left: auto;
+    right: 5px;
+    width: 64px;
+    height: 64px;
+}
+
+.button-pack-icon-next[_ngcontent-c8] {
+    right: auto;
+    left: 5px;
+}
+
+.level[_ngcontent-c8] {
+    position: relative;
+    background-image: url(/assets/TaskCard.svg);
+    margin: 12px;
+    display: block;
+    float: left;
+    width: 260px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    opacity: .9;
+    transition: opacity .25s ease-in-out;
+    text-decoration: none;
+}
+
+.level[_ngcontent-c8]:hover {
+    opacity: 1;
+}
+
+.level-title[_ngcontent-c8] {
+    margin: 2px 4px;
+    color: #4c4c4c;
+}
+
+.level-icon[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 260px;
+    height: 110px;
+}
+
+.locked[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 100%;
+    background-image: url(/assets/TaskLockedOverlay.svg);
+    cursor: default;
+}
+
+.locked[_ngcontent-c8] .level-title[_ngcontent-c8] {
+    color: #787c7f;
+}
+
+.footer[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    top: auto;
+    height: 50px;
+    color: rgba(107, 110, 111, 0.7);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.state[_ngcontent-c8] {
+    margin: 0 -10px 0 0;
+    float: right;
+}
+
+.solve[_ngcontent-c8] {
+    margin-top: 28px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.tutorial[_ngcontent-c8] {
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/tutIcon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.level-type[_ngcontent-c8] {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: left;
+    margin: 0 0 0 -10px;
+    color: rgba(107, 110, 111, 0.7);
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.level-header[_ngcontent-c8] {
+    margin: 10px 15px 0 25px;
+}
+
+.star-block[_ngcontent-c8] {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.star-image[_ngcontent-c8] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.star-check[_ngcontent-c8] {
+    top: -1px;
+}
