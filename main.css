@@ -28,13 +28,17 @@ code {
     font-family: "Consolas";
 }
 
+button,figure .close {
+    cursor: pointer
+}
+
 .aniContainer {
     z-index: 0;
     position: fixed;
     opacity: .5;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .aniBlock {
@@ -42,268 +46,147 @@ code {
     position: absolute;
     display: block;
     background: url(/Euclidea/assets/bglinesrotate.png) no-repeat;
-    background-size: 100%;
+    background-size: 100%
+}
+
+footer,header {
+    position: fixed;
+    transition: opacity .5s;
+    text-align: center
 }
 
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0)
     }
+
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
 
 header {
     width: 100%;
-    position: fixed;
-    text-align: center;
-    top: 10%;
-    transition: opacity .5s;
+    top: 15%
 }
 
 @media screen and (max-width: 400px) {
     header img {
-        width: 95%;
+        width:95%
     }
 }
 
 footer {
-    color: white;
-    width: 100%;
-    position: fixed;
-    text-align: center;
+    color: #fff;
+    width: 400px;
     bottom: 10px;
-    transition: opacity .5s;
-    z-index: 800;
+    left: calc(50% - 200px);
+    z-index: 800
+}
+
+footer em,footer p {
+    font: 11px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #999
+}
+
+footer a,footer a:active,footer a:hover,footer a:link,footer a:visited,footer em,section.loading {
+    color: #ccc
 }
 
 footer p {
-    margin: 4px;
+    margin: 4px
 }
 
 @media screen and (max-width: 350px) {
     footer {
-        width: 320px;
-        left: calc(50% - 160px);
+        width:320px;
+        left: calc(50% - 160px)
     }
 
-    footer p,
-    footer em {
-        font: 10px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    footer em,footer p {
+        font: 10px/16px "Helvetica Neue",Helvetica,Arial,sans-serif
     }
 }
 
-footer a,
-footer a:link,
-footer a:active,
-footer a:hover,
-footer a:visited,
-footer em {
-    color: #fff;
+.md-container div.level {
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px dashed #000;
+    background: rgba(255,255,255,.7);
+    outline: rgba(255,255,255,.7) solid 5px
 }
 
-article {
-    padding: 20px 20px;
-    z-index: 500;
-    margin: auto;
-    max-width: 700px;
-    position: relative;
+div.level h5 {
+    margin: 0;
+    padding-left: 6px
 }
 
-.menu {
-    width: 100%;
-    z-index: 700;
-    position: fixed;
-    text-align: center;
+div.level ul {
+    margin: 0;
+    padding-left: 20px
 }
 
-.fadeout {
-    opacity: 0 !important;
+div.level li {
+    display: block;
+    margin: 5px 0
 }
 
-.hide {
-    visibility: hidden !important;
-}
-
-.nodisp {
-    display: none;
-}
-
-.md-container {
-    display: none;
-}
-
-section.loading {
-    color: #ccc;
-}
-
-.menu-switch,
-.menu-switch:before,
-.menu-switch:after {
-    opacity: 1;
-    content: '';
-    width: 40px;
-    height: 40px;
-    z-index: 997;
+article button {
+    border: 1px solid #999;
     border-radius: 5px;
+    background: #ddd;
+    box-shadow: 1px 1px 1px #333;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    font: 12px/20px verdana;
+    height: 26px;
+    padding: 2px 10px
+}
+
+article figure {
     display: inline-block;
-    border: 1px solid #ccc;
-    transition: opacity .3s, right .5s, top, .5s;
+    margin: 0;
+    line-height: 10px
 }
 
-.menu-switch {
+article .vm {
+    vertical-align: middle
+}
+
+figure.figure {
     position: fixed;
-    background: #ddd;
-    transform: rotate(-8deg);
-}
-
-.menu-switch.start {
-    top: calc(50% - 22px);
-    right: calc(50% - 22px);
-}
-
-.menu-switch.done {
-    top: 10px;
-    right: calc(50% - 390px);
-}
-
-@media screen and (max-width: 800px) {
-    .menu-switch.done {
-        right: 10px;
-    }
-}
-
-.menu-switch:before {
-    top: 0;
-    left: 0;
-    background: #ddd;
-    position: absolute;
-    transform: rotate(16deg);
-}
-
-.menu-switch:after {
-    top: 0;
-    left: 0;
-    background: #eee;
-    position: absolute;
-    transform: rotate(8deg);
-}
-
-.menu-switch button {
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border: none;
-    z-index: 998;
-    display: inline;
-    overflow: hidden;
-    position: absolute;
-    transform: rotate(8deg);
-    font: bold 11px/125px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: capitalize;
-}
-
-.menu-list {
-    opacity: 1;
-    margin: auto;
-    z-index: 999;
-    max-width: 600px;
     padding: 0;
-    background: rgba(0, 0, 0, .6);
-    transition: opacity .3s;
-}
-
-.menu-list li,
-.menu-list li:before,
-.menu-list li:after {
+    margin: 0;
     top: 0;
     left: 0;
-    width: 60px;
-    height: 60px;
-    content: '';
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    display: inline-block;
-    box-shadow: -1px -1px 2px rgba(0, 0, 0, .2);
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    display: none
 }
 
-.menu-list li {
-    margin: 20px;
-    background: #ddd;
-    position: relative;
-    transform: rotate(-5deg);
+.level em {
+    color: #330;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 2px
 }
 
-@media screen and (max-width: 670px) {
-    .menu-list li {
-        margin: 15px;
-    }
+.level h5 em {
+    text-shadow: 0 0 1px rgba(200,200,0,.7)
 }
 
-@media screen and (max-width: 325px) {
-    .menu-list li {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+figure.show-figure {
+    display: table
 }
 
-@media screen and (min-width: 730px) {
-    .menu-list li {
-        margin: 25px;
-    }
+figure.show-figure div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: rgba(0,0,0,.6)
 }
 
-@media screen and (max-height: 565px) {
-    .menu-list li {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
 
-.menu-list li:before {
-    background: #ddd;
-    position: absolute;
-    transform: rotate(10deg);
-}
-
-.menu-list li:after {
-    background: #eee;
-    position: absolute;
-    transform: rotate(5deg);
-}
-
-.menu-list button {
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    border: none;
-    z-index: 1000;
-    cursor: pointer;
-    display: inline;
-    overflow: hidden;
-    position: absolute;
-    transform: rotate(5deg);
-    font: bold 10px/92px "Helvetica Neue", Helvetica, Arial, sans-serif
-}
-
-.menu button:active,
-.menu button:focus {
-    outline: none;
-}
-
-.menu-switch button,
-.menu-list button,
-.tool {
-    background: url(/Euclidea/assets/sprites.png) no-repeat;
-}
-
-.menu-switch button {
-    background-position: -803px -104px;
-}
-
-.menu-switch.start button {
-    background-position: -852px -103px;
-}

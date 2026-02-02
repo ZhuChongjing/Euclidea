@@ -1,4 +1,4 @@
-# `packs/xxx.html`更改及替换规则
+# `packs/xxx.html`更改规则
 
 1. 头文件部分更改为以下代码（记得更改`<title>`）
    
@@ -8,11 +8,11 @@
        <head>
            <meta http-equiv="content-type" content="text/html; charset=utf-8">
            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-           <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
-           <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+           <link rel="shortcut icon" href="/Euclidea/assets/favicon.png" type="image/x-icon">
+           <link rel="icon" href="/Euclidea/assets/favicon.png" type="image/x-icon">
            <title>Euclidea 解题参考 - xxx</title>
-           <link href="../bundle.css" rel="stylesheet">
-           <link href="../packs.css" rel="stylesheet">
+           <link href="/Euclidea/bundle.css" rel="stylesheet">
+           <link href="/Euclidea/packs.css" rel="stylesheet">
    ```
 
 2. 找到并删除以下代码
@@ -190,7 +190,7 @@
    ```html
    
                                <a _ngcontent-c3="" class="logo" href="/">
-                                   <img _ngcontent-c3="" alt="" class="logo-img" src="../assets/LogoPacksScreen.png">
+                                   <img _ngcontent-c3="" alt="" class="logo-img" src="/Euclidea/assets/LogoPacksScreen.png">
                                </a>
                                <div _ngcontent-c3="" class="divider"></div>
                                <div _ngcontent-c3="" class="settings"></div>
@@ -202,7 +202,7 @@
    ```html
    
                                <div _ngcontent-c3="" class="logo">
-                                   <img _ngcontent-c3="" alt="" class="logo-img" src="../assets/LogoPacksScreen.png">
+                                   <img _ngcontent-c3="" alt="" class="logo-img" src="/Euclidea/assets/LogoPacksScreen.png">
                                    <p class="title">解题参考</p>
                                </div>
    ```
@@ -210,9 +210,5 @@
 9. 在`<body>`下方添加以下代码
    
    ```html
-   <img src="../assets/douyin.jpg" class="bottom-left-img">
+   <img src="/Euclidea/assets/douyin.jpg" class="bottom-left-img">
    ```
-
-10. 最后替换空格
-
-

@@ -469,6 +469,14 @@ table {
     font-weight: 900
 }
 
+.tool-button[_ngcontent-c2] {
+  display: inline-block;
+  z-index: 101;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+
 .icon-ABisectTool,.icon-ABisectTool\:regular,.icon-CircleTool,.icon-CircleTool\:regular,.icon-CompassTool,.icon-CompassTool\:regular,.icon-HandTool,.icon-HandTool\:regular,.icon-IntersectTool,.icon-IntersectTool\:regular,.icon-LineTool,.icon-LineTool\:regular,.icon-PBisectTool,.icon-PBisectTool\:regular,.icon-ParallelTool,.icon-ParallelTool\:regular,.icon-PerpTool,.icon-PerpTool\:regular,.icon-PointTool,.icon-PointTool\:regular {
     background-repeat: no-repeat;
     background-position: 0 0
