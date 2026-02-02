@@ -48,7 +48,7 @@ p.title {
     width: 3600px;
     height: 3600px;
     opacity: 0.3;
-    background-image: url(/assets/bglines.png);
+    background-image: url(/Euclidea/assets/bglines.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -219,7 +219,7 @@ p.title {
     bottom: 6px;
     margin: 0 auto;
     cursor: pointer;
-    background-image: url(/assets/ScrollDownIcon.svg);
+    background-image: url(/Euclidea/assets/ScrollDownIcon.svg);
     background-position: center;
     width: 30px;
     height: 30px;
@@ -314,13 +314,13 @@ p.title {
 .icon-Explore[_ngcontent-c1] {
     height: 40px;
     width: 40px;
-    background-image: url(/assets/ExploreBtn.svg);
+    background-image: url(/Euclidea/assets/ExploreBtn.svg);
     background-repeat: no-repeat;
     background-position: 0 -40px;
 }
 
 .icon-HandTool[_ngcontent-c1] {
-    background: url(/assets/HandTool.svg) no-repeat center;
+    background: url(/Euclidea/assets/HandTool.svg) no-repeat center;
     background-position: 0 0;
 }
 
@@ -406,7 +406,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     width: 3600px;
     height: 3600px;
     opacity: 0.3;
-    background-image: url(/assets/bglines.png);
+    background-image: url(/Euclidea/assets/bglines.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -474,7 +474,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     cursor: pointer;
     height: 40px;
     width: 40px;
-    background-image: url(/assets/SettingsBtnWhite.svg);
+    background-image: url(/Euclidea/assets/SettingsBtnWhite.svg);
     background-position: 0 -80px;
     background-repeat: no-repeat;
 }
@@ -514,24 +514,24 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
 
 .button-apple-en[_ngcontent-c3] {
     width: 120px;
-    background-image: url(/assets/AppStoreBadgeWhite_US.svg);
+    background-image: url(/Euclidea/assets/AppStoreBadgeWhite_US.svg);
 }
 
 .button-google-en[_ngcontent-c3] {
     float: right;
     width: 120px;
-    background-image: url(/assets/GooglePlayBadgeWhite_US.svg);
+    background-image: url(/Euclidea/assets/GooglePlayBadgeWhite_US.svg);
 }
 
 .button-apple-ru[_ngcontent-c3] {
     width: 120px;
-    background-image: url(/assets/AppStoreBadgeWhite_RU.svg);
+    background-image: url(/Euclidea/assets/AppStoreBadgeWhite_RU.svg);
 }
 
 .button-google-ru[_ngcontent-c3] {
     float: right;
     width: 120px;
-    background-image: url(/assets/GooglePlayBadgeWhite_RU.svg);
+    background-image: url(/Euclidea/assets/GooglePlayBadgeWhite_RU.svg);
 }
 
 .button[_ngcontent-c3]:hover {
@@ -579,7 +579,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     height: 30px;
     width: 30px;
     float: left;
-    background-image: url(/assets/StarIcon.svg);
+    background-image: url(/Euclidea/assets/StarIcon.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -791,7 +791,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     pointer-events: none;
     background-repeat: no-repeat;
     background-position: 98% center;
-    background-image: url(/assets/StarCheckIconBlue.svg);
+    background-image: url(/Euclidea/assets/StarCheckIconBlue.svg);
     background-size: 25px;
 }
 
@@ -914,7 +914,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     position: relative;
     width: 100%;
     height: 50px;
-    background-image: url(/assets/darkTextureplus1Mini.png);
+    background-image: url(/Euclidea/assets/darkTextureplus1Mini.png);
 }
 
 .header[_ngcontent-c5] {
@@ -1007,7 +1007,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     margin: auto;
     width: 30px;
     height: 30px;
-    background-image: url(/assets/ProfileIcon.svg);
+    background-image: url(/Euclidea/assets/ProfileIcon.svg);
     background-position: center;
 }
 
@@ -1031,7 +1031,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     width: 32px;
     height: 32px;
     margin-top: 4px;
-    background-image: url(/assets/ArrowDown.svg);
+    background-image: url(/Euclidea/assets/ArrowDown.svg);
     float: left;
 }
 
@@ -1048,7 +1048,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     top: 51px;
     width: 100%;
     text-align: center;
-    background-image: url(/assets/darkTextureplus1Mini.png);
+    background-image: url(/Euclidea/assets/darkTextureplus1Mini.png);
     box-shadow: 0 0 1px #000;
     transition: .2s;
     -ms-transform: translateX(100%);
@@ -1074,7 +1074,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     margin: auto;
     width: 30px;
     height: 30px;
-    background-image: url(/assets/LogOut.svg);
+    background-image: url(/Euclidea/assets/LogOut.svg);
     background-position: center;
 }
 
@@ -1086,7 +1086,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     margin: auto;
     width: 30px;
     height: 30px;
-    background-image: url(/assets/ProfileIcon.svg);
+    background-image: url(/Euclidea/assets/ProfileIcon.svg);
     background-position: center;
 }
 
@@ -1132,7 +1132,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     position: relative;
     width: 240px;
     height: 240px;
-    background-image: url(/assets/PackIcon.svg);
+    background-image: url(/Euclidea/assets/PackIcon.svg);
     margin: 0 20px 40px 20px;
     display: block;
     float: left;
@@ -1189,7 +1189,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
 }
 
 .pack.locked[_ngcontent-c7] {
-    background-image: url(/assets/PackLockedIcon.svg);
+    background-image: url(/Euclidea/assets/PackLockedIcon.svg);
     cursor: default;
 }
 
@@ -1329,7 +1329,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
 
 .level[_ngcontent-c8] {
     position: relative;
-    background-image: url(/assets/TaskCard.svg);
+    background-image: url(/Euclidea/assets/TaskCard.svg);
     margin: 12px;
     display: block;
     float: left;
@@ -1370,7 +1370,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
     left: 0;
     margin: auto;
     height: 100%;
-    background-image: url(/assets/TaskLockedOverlay.svg);
+    background-image: url(/Euclidea/assets/TaskLockedOverlay.svg);
     cursor: default;
 }
 
@@ -1409,7 +1409,7 @@ table.hotKeys-list[_ngcontent-c1] tr[_ngcontent-c1]:last-of-type {
 .tutorial[_ngcontent-c8] {
     width: 30px;
     height: 30px;
-    background-image: url(/assets/tutIcon.svg);
+    background-image: url(/Euclidea/assets/tutIcon.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }

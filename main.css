@@ -41,7 +41,7 @@ code {
     animation: rotate 240s infinite linear;
     position: absolute;
     display: block;
-    background: url(/assets/bglinesrotate.png) no-repeat;
+    background: url(/Euclidea/assets/bglinesrotate.png) no-repeat;
     background-size: 100%;
 }
 
@@ -297,7 +297,7 @@ section.loading {
 .menu-switch button,
 .menu-list button,
 .tool {
-    background: url(/assets/sprites.png) no-repeat;
+    background: url(/Euclidea/assets/sprites.png) no-repeat;
 }
 
 .menu-switch button {
