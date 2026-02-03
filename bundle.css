@@ -477,16 +477,46 @@ table {
   height: 48px;
 }
 
-.icon-ABisectTool,.icon-ABisectTool\:regular,.icon-CircleTool,.icon-CircleTool\:regular,.icon-CompassTool,.icon-CompassTool\:regular,.icon-HandTool,.icon-HandTool\:regular,.icon-IntersectTool,.icon-IntersectTool\:regular,.icon-LineTool,.icon-LineTool\:regular,.icon-PBisectTool,.icon-PBisectTool\:regular,.icon-ParallelTool,.icon-ParallelTool\:regular,.icon-PerpTool,.icon-PerpTool\:regular,.icon-PointTool,.icon-PointTool\:regular {
+.icon-ABisectTool,.icon-ABisectTool\:regular,
+.icon-CircleTool,.icon-CircleTool\:regular,
+.icon-CompassTool,.icon-CompassTool\:regular,
+.icon-HandTool,.icon-HandTool\:regular,
+.icon-IntersectTool,.icon-IntersectTool\:regular,
+.icon-LineTool,.icon-LineTool\:regular,
+.icon-PBisectTool,.icon-PBisectTool\:regular,
+.icon-ParallelTool,.icon-ParallelTool\:regular,
+.icon-PerpTool,.icon-PerpTool\:regular,
+.icon-PointTool,.icon-PointTool\:regular,
+.icon-FinishedButton,.icon-FinishedButton\:regular {
     background-repeat: no-repeat;
     background-position: 0 0
 }
 
-.icon-ABisectTool:hover,.icon-ABisectTool\:regular:hover,.icon-CircleTool:hover,.icon-CircleTool\:regular:hover,.icon-CompassTool:hover,.icon-CompassTool\:regular:hover,.icon-HandTool:hover,.icon-HandTool\:regular:hover,.icon-IntersectTool:hover,.icon-IntersectTool\:regular:hover,.icon-LineTool:hover,.icon-LineTool\:regular:hover,.icon-PBisectTool:hover,.icon-PBisectTool\:regular:hover,.icon-ParallelTool:hover,.icon-ParallelTool\:regular:hover,.icon-PerpTool:hover,.icon-PerpTool\:regular:hover,.icon-PointTool:hover,.icon-PointTool\:regular:hover {
+.icon-ABisectTool:hover,.icon-ABisectTool\:regular:hover,
+.icon-CircleTool:hover,.icon-CircleTool\:regular:hover,
+.icon-CompassTool:hover,.icon-CompassTool\:regular:hover,
+.icon-HandTool:hover,.icon-HandTool\:regular:hover,
+.icon-IntersectTool:hover,.icon-IntersectTool\:regular:hover,
+.icon-LineTool:hover,.icon-LineTool\:regular:hover,
+.icon-PBisectTool:hover,.icon-PBisectTool\:regular:hover,
+.icon-ParallelTool:hover,.icon-ParallelTool\:regular:hover,
+.icon-PerpTool:hover,.icon-PerpTool\:regular:hover,
+.icon-PointTool:hover,.icon-PointTool\:regular:hover,
+.icon-FinishedButton:hover,.icon-FinishedButton\:regular:hover {
     background-position: 0 -48px
 }
 
-.active.icon-ABisectTool,.active.icon-ABisectTool\:regular,.active.icon-CircleTool,.active.icon-CircleTool\:regular,.active.icon-CompassTool,.active.icon-CompassTool\:regular,.active.icon-HandTool,.active.icon-HandTool\:regular,.active.icon-IntersectTool,.active.icon-IntersectTool\:regular,.active.icon-LineTool,.active.icon-LineTool\:regular,.active.icon-PBisectTool,.active.icon-PBisectTool\:regular,.active.icon-ParallelTool,.active.icon-ParallelTool\:regular,.active.icon-PerpTool,.active.icon-PerpTool\:regular,.active.icon-PointTool,.active.icon-PointTool\:regular {
+.active.icon-ABisectTool,.active.icon-ABisectTool\:regular,
+.active.icon-CircleTool,.active.icon-CircleTool\:regular,
+.active.icon-CompassTool,.active.icon-CompassTool\:regular,
+.active.icon-HandTool,.active.icon-HandTool\:regular,
+.active.icon-IntersectTool,.active.icon-IntersectTool\:regular,
+.active.icon-LineTool,.active.icon-LineTool\:regular,
+.active.icon-PBisectTool,.active.icon-PBisectTool\:regular,
+.active.icon-ParallelTool,.active.icon-ParallelTool\:regular,
+.active.icon-PerpTool,.active.icon-PerpTool\:regular,
+.active.icon-PointTool,.active.icon-PointTool\:regular,
+.active.icon-FinishedButton,.active.icon-FinishedButton\:regular {
     background-position: 0 -96px
 }
 
@@ -528,6 +558,10 @@ table {
 
 .icon-PerpTool,.icon-PerpTool\:regular {
     background-image: url(/Euclidea/assets/PerpTool.svg)
+}
+
+.icon-FinishedButton, .icon-FinishedButton\:regular {
+    background-image: url(/Euclidea/assets/FinishedButton.svg)
 }
 
 .icon-3CirclesCIcon {
