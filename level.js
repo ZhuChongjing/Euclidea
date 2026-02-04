@@ -56,10 +56,10 @@ function initStarNavigation() {
                 return;
             }
             
-            // 处理特殊情况：EL星
-            if (starType === 'EL') {
-                // 激活EL星按钮
-                document.querySelector('.star-item[data-star="EL"]').classList.add('active');
+            // 处理特殊情况：LE星
+            if (starType === 'LE') {
+                // 激活LE星按钮
+                document.querySelector('.star-item[data-star="LE"]').classList.add('active');
                 
                 // 如果需要同时激活，也激活L星
                 if (this.getAttribute('data-combined') === 'true') {
@@ -67,9 +67,9 @@ function initStarNavigation() {
                 }
                 
                 // 显示EL的解法步骤
-                const elStepContent = document.querySelector('.step-content[data-star="EL"]');
-                if (elStepContent) {
-                    elStepContent.classList.add('active');
+                const leStepContent = document.querySelector('.step-content[data-star="LE"]');
+                if (leStepContent) {
+                    leStepContent.classList.add('active');
                 }
             } else if (starType === 'L' || starType === 'E') {
                 // 处理其他星星类型

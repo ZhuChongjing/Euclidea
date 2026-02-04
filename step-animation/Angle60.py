@@ -34,7 +34,7 @@ class Angle60(Scene):
         # Finish: LE
         all_deselect(self)
         dot0.turn_finished()
-        line3_finished = ExtendLine(line3, 1, 5)
+        line3_finished = ExtendLine(line3, 0, 5)
         line3_finished.turn_finished()
         self.remove(line3)
         self.add(line3_finished)
@@ -51,7 +51,7 @@ class Angle60(Scene):
 
         # Finish: V
         all_deselect(self)
-        line4_finished = ExtendLine(line4, 1, 5)
+        line4_finished = ExtendLine(line4, 0, 5)
         line4_finished.turn_finished()
         line3_finished.turn_v_finished()
         line0.turn_finished()

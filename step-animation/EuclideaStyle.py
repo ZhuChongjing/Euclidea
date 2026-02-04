@@ -262,8 +262,12 @@ class EuclideaIntersectionPoint(EuclideaFixedPoint):
             return [dot1]
         return [dot1, dot2]
 
-def ExtendLine(line: EuclideaLine | EuclideaQuestionLine, towards_end: int, length: float) -> EuclideaLine | EuclideaQuestionLine:
-    """将直线向指定端点方向延长指定长度"""
+def ExtendLine(line: EuclideaLine | EuclideaQuestionLine, extend_start_length: float = 0.0, extend_end_length: float = 0.0) -> EuclideaLine | EuclideaQuestionLine:
+    """将直线向指定方向延长指定长度（支持双向同时延长）"""
+    # 校验延长长度非负
+    if extend_start_length < 0 or extend_end_length < 0:
+        raise ValueError("延长长度不能为负数！")
+    
     # 1. 获取原始直线的两个端点坐标
     start_point = line.get_start()  # 起始点 (x1, y1, z1)
     end_point = line.get_end()      # 终止点 (x2, y2, z2)
@@ -271,30 +275,30 @@ def ExtendLine(line: EuclideaLine | EuclideaQuestionLine, towards_end: int, leng
     # 2. 计算直线的方向向量和单位向量
     # 原始向量（从start到end）
     vec = end_point - start_point
-    # 原始向量的长度
-    vec_length = math.hypot(vec[0], vec[1])  # 仅计算二维长度（忽略z轴）
+    # 原始向量的长度（仅计算二维长度，忽略z轴）
+    vec_length = math.hypot(vec[0], vec[1])
     if vec_length < 1e-6:  # 防止零向量（两点重合）
         raise ValueError("原始直线的两个端点不能重合！")
     
     # 单位向量（方向不变，长度为1）
     unit_vec = vec / vec_length
     
-    # 3. 根据指定方向计算新的端点
+    # 3. 计算双向延长后的新端点
     new_start = start_point.copy()
     new_end = end_point.copy()
     
-    if towards_end == 1:  # 向end端点方向延长
-        # 新的end点 = 原end点 + 单位向量 * 延长长度
-        new_end = end_point + unit_vec * length
-    elif towards_end == 0:  # 向start端点方向延长
-        # 新的start点 = 原start点 - 单位向量 * 延长长度
-        new_start = start_point - unit_vec * length
-    else:
-        raise ValueError("towards_end参数只能是0（start）或1（end）")
+    # 向start端延长：新start = 原start - 单位向量 * 延长长度
+    if extend_start_length > 1e-6:  # 忽略极小值（避免浮点误差）
+        new_start = start_point - unit_vec * extend_start_length
     
-    # 4. 创建新直线（保留原直线的样式：颜色、线宽等）
+    # 向end端延长：新end = 原end + 单位向量 * 延长长度
+    if extend_end_length > 1e-6:  # 忽略极小值（避免浮点误差）
+        new_end = end_point + unit_vec * extend_end_length
+    
+    # 4. 创建新直线（保留原直线类型和样式）
     if isinstance(line, EuclideaLine):
-        return EuclideaLine(start=new_start,end=new_end)
-    if isinstance(line, EuclideaQuestionLine):
-        return EuclideaQuestionLine(start=new_start,end=new_end)
-    raise ValueError("line参数必须是EuclideaLine或EuclideaQuestionLine实例")
+        return EuclideaLine(start=new_start, end=new_end)
+    elif isinstance(line, EuclideaQuestionLine):
+        return EuclideaQuestionLine(start=new_start, end=new_end)
+    else:
+        raise ValueError("line参数必须是EuclideaLine或EuclideaQuestionLine实例")
