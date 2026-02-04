@@ -95,12 +95,14 @@ function initToolButtons() {
             // 添加当前激活状态
             this.classList.add('active');
             
-            const time = parseFloat(this.getAttribute('data-time'));
-            const video = document.querySelector('.solution-video');
+            const step = parseFloat(this.getAttribute('step'));
+            const image = document.querySelector('.solution-image');
             
-            if (video) {
-                // 直接跳转到目标时间
-                video.currentTime = time;
+            if (image) {
+                // 构建新的图片路径
+                const currentFileName = window.location.pathname.split('/').pop().replace(/\.[^/.]+$/, '');
+                console.log(`/Euclidea/step-animation/${currentFileName}_${step}.png`);
+                image.src = `/Euclidea/step-animation/${currentFileName}_${step}.png`;
             }
         });
     });
