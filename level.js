@@ -1,43 +1,60 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const currentFileName = window.location.pathname.split('/').pop().replace(/\.[^/.]+$/, '');
+    const currentFilePath = window.location.pathname.split('/');
+    const currentFileName = currentFilePath.pop().replace(/\.[^/.]+$/, '');
     
-    /* 激活当前页面对应的星星按钮 */
     const currentStar = currentFileName.endsWith('_L' ) ? 'L' :
                         currentFileName.endsWith('_E' ) ? 'E' :
                         currentFileName.endsWith('_LE') ? 'LE' :
                         currentFileName.endsWith('_V' ) ? 'V' : null;
+    document.querySelectorAll('.star-item').forEach(item => {
+        item.addEventListener('click', function() {
+            const starType = this.getAttribute('data-star');
+            const baseFileName = currentFileName.replace(/(_LE|_E|_L|_V)$/, '');
+            if (currentStar !== starType) {
+                window.location.href = `./${baseFileName}_${starType}.html`;
+            }
+        });
+    });
     const starItem = document.querySelector(`.star-item[data-star="${currentStar}"]`);
     if (starItem) {
         starItem.classList.add('active');
     }
 
-    /* 初始化星星导航功能 */
-    document.querySelectorAll('.star-item').forEach(item => {
-        item.addEventListener('click', function() {
-            const starType = this.getAttribute('data-star');
-            const baseFileName = currentFileName.replace(/(_LE|_E|_L|_V)$/, '');
-            window.location.href = `./${baseFileName}_${starType}.html`;
-        });
-    });
-
-    /* 初始化工具按钮功能 */
+    document.querySelector('.solution-image').src = `/Euclidea/step-animation/${currentFileName}_0.png`;
     document.querySelectorAll('.tool-button').forEach(button => {
         button.addEventListener('click', function() {
-            // 移除所有激活状态
             document.querySelectorAll('.tool-button').forEach(b => b.classList.remove('active'));
-            
-            // 添加当前激活状态
             this.classList.add('active');
             
             const step = parseFloat(this.getAttribute('step'));
             const image = document.querySelector('.solution-image');
             
             if (image) {
-                // 构建新的图片路径
-                const currentFileName = window.location.pathname.split('/').pop().replace(/\.[^/.]+$/, '');
-                console.log(`/Euclidea/step-animation/${currentFileName}_${step}.png`);
                 image.src = `/Euclidea/step-animation/${currentFileName}_${step}.png`;
             }
         });
     });
+
+    // TODO: 补全关卡名称
+    const levelName = {
+        // Alpha
+        'Angle60': ['1.1', 'Angle of 60°'],
+        'PerpBisector': ['1.2', 'Perpendicular Bisector'],
+        'Midpoint': ['1.3', 'Midpoint'],
+        'CircleInSquare': ['1.4', 'Circle in Square'],
+        'RhombusInRect': ['1.5', 'Rhombus in Rectangle'],
+        'CircleCenter': ['1.6', 'Circle Center'],
+        'SquareInCircle': ['1.7', 'Inscribed Square'],
+        // Beta
+        'BisectAngle': ['2.1', 'Angle Bisector'],
+        'Incenter': ['2.2', 'Intersection of Angle Bisectors'],
+    }
+    for (const level in levelName) {
+        if (currentFileName.startsWith(level)) {
+            document.head.querySelector('title').textContent = `Euclidea 解题参考 - ${levelName[level][1]}`;
+            document.querySelector('.level-title').textContent = levelName[level].join(' ');
+        }
+    }
+
+    document.querySelector('.button-back-icon').href = `/Euclidea/packs/${currentFilePath[4]}.html`;
 });

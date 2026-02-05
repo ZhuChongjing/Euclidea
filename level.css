@@ -41,7 +41,6 @@
     cursor: pointer;
     padding: 15px 25px;
     gap: 12px;
-    min-width: 140px;
     justify-content: center;
     user-select: none;
     -webkit-user-select: none;

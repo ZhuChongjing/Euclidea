@@ -8,6 +8,9 @@
         <title></title>
         <link href="/Euclidea/bundle.css" rel="stylesheet">
         <link href="/Euclidea/packs.css" rel="stylesheet">
+        <link href="/Euclidea/level.css" rel="stylesheet">
+        <script src="/Euclidea/level.js"></script>
+        <script src="/Euclidea/star.js"></script>
     </head>
     <body>
         <img src="/Euclidea/assets/douyin.jpg" class="bottom-left-img">
@@ -39,14 +42,50 @@
                                 <div _ngcontent-c3="" class="total-count">
                                     <!---->
                                     <p _ngcontent-c3="" class="count">
-                                        <span _ngcontent-c3="" class="count-inner-bold">516</span>
-                                        <span _ngcontent-c3="" class="count-inner">/ 516</span>
+                                        <span _ngcontent-c3="" class="count-inner-bold">?</span>
+                                        <span _ngcontent-c3="" class="count-inner">/ ?</span>
                                     </p>
                                 </div>
                             </div>
                         </header>
                     </header-component>
-                    <p style="height: 100%; width: 100%; line-height: 100vh; text-align: center; font-family: '华文中宋'; color: #fff; font-size: 300%;">该页面还未编写，敬请期待！</p>
+                    <router-outlet _ngcontent-c2=""></router-outlet>
+                    <levels-box-component _nghost-c8="" ng-version="4.0.1">
+                        <div _ngcontent-c8="" class="levels-box">
+                            <div _ngcontent-c8="" class="levels-box-inner">
+                                <div class="level-header-section">
+                                    <a _ngcontent-c8="" class="button-back-icon">
+                                        <img _ngcontent-c8="" alt="" src="/Euclidea/assets/BackBtn.svg">
+                                    </a>
+                                    <div _ngcontent-c8="" class="pack-label">
+                                        <div _ngcontent-c8="" alt="" class="icon svg-Alpha"></div>
+                                        <!---->
+                                        <h1 class="level-title"></h1>
+                                    </div>
+                                </div>
+                                <div class="stars-nav-container">
+                                    <div class="stars-nav">
+                                        <div class="star-item" data-star="L">
+                                            <img _ngcontent-c3="" alt="" class="bigstar" src="/Euclidea/assets/resstar2-1at2x.png">
+                                            <span class="star-label">2L</span>
+                                        </div>
+                                        <div class="star-item" data-star="E">
+                                            <img _ngcontent-c3="" alt="" class="bigstar" src="/Euclidea/assets/resstar3-1at2x.png">
+                                            <span class="star-label">6E</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-section">
+                                    <div class="tools-section">
+                                        <div _ngcontent-c2="" class="tool-button icon-ABisectTool" step="1"></div>
+                                        <div _ngcontent-c2="" class="tool-button icon-ABisectTool" step="2"></div>
+                                        <div _ngcontent-c2="" class="tool-button icon-PointTool" step="3"></div>
+                                    </div>
+                                    <img class="solution-image">
+                                </div>
+                            </div>
+                        </div>
+                    </levels-box-component>
                 </main>
             </main-component>
         </app-component>
