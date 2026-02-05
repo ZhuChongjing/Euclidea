@@ -56,5 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    document.querySelector('.button-back-icon').href = `/Euclidea/packs/${currentFilePath[4]}.html`;
+    const levelsList = [
+        'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon',
+        'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa',
+        'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron'
+    ];
+    for (const pack of levelsList) {
+        if (currentFilePath.includes(pack)) {
+            document.querySelector('.button-back-icon').href = `/Euclidea/packs/${pack}.html`;
+            document.querySelector('.icon').classList.add(`svg-${pack}`);
+        }
+    }
 });
