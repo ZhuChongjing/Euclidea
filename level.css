@@ -1,4 +1,3 @@
-
 .level-content {
     padding: 20px;
     max-width: 1200px;
@@ -85,8 +84,7 @@
 .content-section {
     display: flex;
     gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto 40px auto;
+    max-width: 100%;
 }
 
 .tools-section {
@@ -98,7 +96,7 @@
 
 .solution-image {
     border-radius: 10px;
-    width: 100%;
+    width: 95%;
 }
 
 .steps-section {
@@ -107,7 +105,7 @@
     border-radius: 10px;
     margin-top: 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -148,4 +146,13 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.levels-box-inner[_ngcontent-c8] {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 120px;
+    height: 100%;
+    width: 95%;
+    max-width: 95%;
 }

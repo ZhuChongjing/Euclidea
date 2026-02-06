@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (pack.endsWith('.html')) { pack = pack.slice(0, -5); }
         if (packsStar.hasOwnProperty(pack)) {
             document.querySelector('.count-inner-bold').textContent = packsStar[pack];
-            document.querySelector('.count-inner').textContent = '/' + packsStar[pack];
+            document.querySelector('.count-inner').textContent = '/ ' + packsStar[pack];
         }
     }
 });

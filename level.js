@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Beta
         'BisectAngle': ['2.1', 'Angle Bisector'],
         'Incenter': ['2.2', 'Intersection of Angle Bisectors'],
+        'Angle30': ['2.3', 'Angle of 30°'],
+        'DoubleAngle': ['2.4', 'Double Angle'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
