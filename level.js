@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'Incenter': ['2.2', 'Intersection of Angle Bisectors'],
         'Angle30': ['2.3', 'Angle of 30°'],
         'DoubleAngle': ['2.4', 'Double Angle'],
+        'CutRectangle': ['2.5', 'Cut Rectangle'],
+        'DropPerp': ['2.6', 'Drop a Perpendicular'],
+        'ErectPerp': ['2.7', 'Erect a Perpendicular'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {

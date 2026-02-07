@@ -31,6 +31,9 @@
 .stars-nav {
     display: flex;
     gap: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
     background: none;
 }
 
@@ -38,8 +41,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 15px 25px;
-    gap: 12px;
+    padding-bottom: 5px;
+    gap: 10px;
     justify-content: center;
     user-select: none;
     -webkit-user-select: none;
@@ -47,31 +50,22 @@
     -ms-user-select: none;
     position: relative;
     z-index: 1;
-    border: 2px solid transparent;
-    border-radius: 8px;
     background: none;
-}
-
-.star-item.active {
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 8px;
+    text-align: center;
 }
 
 .star-item.active .star-label {
-    color: #fff;
-    text-decoration-color: #fff;
+    color: #f8ad00;
 }
 
 .bigstar[_ngcontent-c3] {
-  margin: 5px;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 }
 
 .star-label {
-    font-size: 18px;
+    font-size: 25px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #fff;
