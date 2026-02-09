@@ -56,6 +56,16 @@ document.addEventListener('DOMContentLoaded', function() {
         'Tangent1': ['2.8', 'Tangent to Circle at Point'],
         'CircleTangentL': ['2.9', 'Circle Tangent to Line'],
         'CircleInRhombus': ['2.10', 'Circle in Rhombus'],
+        // Gamma
+        'ChordMidpoint': ['3.1', 'Chord Midpoint'],
+        'ATrByOrthocenter': ['3.2', 'Triangle by Angle and Orthocenter'],
+        'ATrByCircumcenter': ['3.3', 'Intersection of Perpendicular Bisectors'],
+        'AEqualSegments1': ['3.4', 'Three equal segments - 1'],
+        'CircleTangentPL': ['3.5', 'Circle through Point Tangent to Line'],
+        'TrapezoidCut': ['3.6', 'Midpoints of Trapezoid Bases'],
+        'Angle45': ['3.7', 'Angle of 45°'],
+        'Lozenge': ['3.8', 'Lozenge'],
+        'CentroidOfQuadrilateral': ['3.9', 'Centroid of Quadrilateral'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
