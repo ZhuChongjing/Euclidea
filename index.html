@@ -7,34 +7,69 @@
         <link rel="icon" href="/Euclidea/assets/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="/Euclidea/bundle.css">
         <link rel="stylesheet" href="/Euclidea/packs.css">
-        <link rel="stylesheet" href="/Euclidea/index.css">
+        <link rel="stylesheet" href="/Euclidea/styles.css" />
         <title>Euclidea 解题参考</title>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/CustomEase.min.js"></script>
+        <script src="/Euclidea/script.js"></script>
     </head>
     <body>
-        <img src="/Euclidea/assets/douyin.jpg" class="bottom-left-img">
-        <div class="aniContainer"><span class="aniBlock"></span></div>
-        <header>
-            <img src="/Euclidea/assets/LogoPacksScreen.png" style="display: inline-block; vertical-align: middle;">
-            <p class="title" style="display: inline-block; vertical-align: middle; margin-left: 20px;">解题参考</p>
-        </header>
-        <nav class="menu">
-            <a href="/Euclidea/packs.html">
-                <div class="menu-switch start"><button class="show-list"></button></div>
-            </a>
-        </nav>
-        <footer>
-            <p>
-                <a href="https://play.google.com/store/apps/details?id=com.hil_hk.euclidea" target="_blank" class="button">
-                    <img src="/Euclidea/assets/GooglePlayBadgeWhite_US.svg" alt="Google Play">
+        <div class="gsap-anim">
+            <div class="preloader">
+                <div class="intro-title">
+                    <h1>Euclidea Solution</h1>
+                </div>
+                <div class="outro-title">
+                    <h1>15</h1>
+                </div>
+            </div>
+            <div class="split-overlay">
+                <div class="intro-title">
+                    <h1>Euclidea Solution</h1>
+                </div>
+                <div class="outro-title">
+                    <h1>15</h1>
+                </div>
+            </div>
+            <div class="tags-overlay">
+                <div class="tag tag-1">
+                    <p>内涵所有关卡解析</p>
+                </div>
+                <div class="tag tag-2">
+                    <p>详细的解题步骤</p>
+                </div>
+                <div class="tag tag-3">
+                    <p>更多功能等你发现</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="/Euclidea/assets/douyin.jpg" class="bottom-left-img">
+            <div class="aniContainer"><span class="aniBlock"></span></div>
+            <header>
+                <img src="/Euclidea/assets/LogoPacksScreen.png" style="display: inline-block; vertical-align: middle;">
+                <p class="title" style="display: inline-block; vertical-align: middle; margin-left: 20px;">解题参考</p>
+            </header>
+            <nav class="menu">
+                <a href="/Euclidea/packs.html">
+                    <div class="menu-switch start"><button class="show-list"></button></div>
                 </a>
-                <a href="https://itunes.apple.com/zh/app/id927914361" target="_blank" class="button">
-                    <img src="/Euclidea/assets/AppStoreBadgeWhite_US.svg" alt="App Store">
-                </a>
-            </p>
-            <p>Euclidea 官方网站：<code><a href="https://www.euclidea.xyz" target="_blank">www.euclidea.xyz</a></code></p>
-            <p>本项目由 <code><a href="https://github.com/ZhuChongjing" target="_blank">@ZhuChongjing</a>(Explore Maths)</code> 维护</p>
-            <p>欢迎加群讨论和反馈问题，共同进步。</p>
-        </footer>
+            </nav>
+            <footer>
+                <p>
+                    <a href="https://play.google.com/store/apps/details?id=com.hil_hk.euclidea" target="_blank" class="button">
+                        <img src="/Euclidea/assets/GooglePlayBadgeWhite_US.svg" alt="Google Play">
+                    </a>
+                    <a href="https://itunes.apple.com/zh/app/id927914361" target="_blank" class="button">
+                        <img src="/Euclidea/assets/AppStoreBadgeWhite_US.svg" alt="App Store">
+                    </a>
+                </p>
+                <p>Euclidea 官方网站：<code><a href="https://www.euclidea.xyz" target="_blank">www.euclidea.xyz</a></code></p>
+                <p>本项目由 <code><a href="https://github.com/ZhuChongjing" target="_blank">@ZhuChongjing</a>(Explore Maths)</code> 维护</p>
+                <p>欢迎加 <span style="color: #fff;">抖音群<code>165454873438</code></span> 讨论和反馈问题，共同进步。</p>
+            </footer>
+        </div>
         <script src="/Euclidea/jquery.js"></script>
         <script src="/Euclidea/render.js"></script>
     </body>

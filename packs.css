@@ -9,7 +9,7 @@
     width: var(--bottom-item-width);
     max-width: 200px;
     border-radius: 8px;
-    z-index: 999;
+    z-index: 998;
 }
 
 .bottom-right-img {
@@ -20,7 +20,7 @@
     max-width: 120px;
     height: auto;
     display: none;
-    z-index: 999;
+    z-index: 998;
 }
 
 .apple-button {
