@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'CutRectangle': ['2.5', 'Cut Rectangle'],
         'DropPerp': ['2.6', 'Drop a Perpendicular'],
         'ErectPerp': ['2.7', 'Erect a Perpendicular'],
+        'Tangent1': ['2.8', 'Tangent to Circle at Point'],
+        'CircleTangentL': ['2.9', 'Circle Tangent to Line'],
+        'CircleInRhombus': ['2.10', 'Circle in Rhombus'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
