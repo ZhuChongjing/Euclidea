@@ -270,7 +270,6 @@
 }
 
 .container footer {
-    color: #fff;
     width: 400px;
     bottom: 10px;
     left: calc(50% - 200px);
@@ -286,7 +285,7 @@
 .container footer a:active,
 .container footer a:hover,
 .container footer a:link,
-.container footer a:visited
+.container footer a:visited,
 .container footer span {
     color: #ccc
 }
