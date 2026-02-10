@@ -66,6 +66,17 @@ document.addEventListener('DOMContentLoaded', function() {
         'Angle45': ['3.7', 'Angle of 45°'],
         'Lozenge': ['3.8', 'Lozenge'],
         'CentroidOfQuadrilateral': ['3.9', 'Centroid of Quadrilateral'],
+        // Delta
+        'CDoubleSeg': ['4.1', 'Double Segment'],
+        'Angle60Drop': ['4.2', 'Angle of 60° - 2'],
+        'EquilateralAboutCircle': ['4.3', 'Circumscribed Equilateral Triangle'],
+        'EquilateralInCircle': ['4.4', 'Equilateral Triangle in Circle'],
+        'Cut2Rectangles': ['4.5', 'Cut Two Rectangles'],
+        'Sqrt2': ['4.6', 'Square Root of 2'],
+        'Sqrt3': ['4.7', 'Square Root of 3'],
+        'Angle15': ['4.8', 'Angle of 15°'],
+        'SquareByOppMidpoints': ['4.9', 'Square by Opposite Midpoints'],
+        'SquareByAdjMidpoints': ['4.10', 'Square by Adjacent Midpoints'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
