@@ -85,12 +85,13 @@
     background: none !important;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 7px;
 }
 
 .solution-image {
     border-radius: 10px;
     width: 95%;
+    height: 95%;
 }
 
 .steps-section {
