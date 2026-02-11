@@ -77,6 +77,18 @@ document.addEventListener('DOMContentLoaded', function() {
         'Angle15': ['4.8', 'Angle of 15°'],
         'SquareByOppMidpoints': ['4.9', 'Square by Opposite Midpoints'],
         'SquareByAdjMidpoints': ['4.10', 'Square by Adjacent Midpoints'],
+        // Epsilon
+        'Parallel': ['5.1', 'Parallel Line'],
+        'Parallelogram3V': ['5.2', 'Parallelogram by Three Vertices'],
+        'LineAlongPoints': ['5.3', 'Line Equidistant from Two Points - 1'],
+        'LineBetweenPoints': ['5.4', 'Line Equidistant from Two Points - 2'],
+        'Hash': ['5.5', 'Hash'],
+        'ShiftAngle': ['5.6', 'Shift Angle'],
+        'EquidistantParallel': ['5.7', 'Line Equidistant from Two Lines'],
+        'SquareAboutCircle': ['5.8', 'Circumscribed Square'],
+        'SquareInSquare': ['5.9', 'Square in Square'],
+        'CircleInOutSquare': ['5.10', 'Circle Tangent to Square Side'],
+        'HexagonBySide': ['5.11', 'Regular Hexagon'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
