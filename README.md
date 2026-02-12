@@ -1,9 +1,4 @@
 ![制作进度_Sheet1](https://github.com/user-attachments/assets/0de917cd-d184-4aea-87e7-b74fae2aeff3)
-<p align=center>目前关卡制作进度</p>
-
----
-
-网页目前还在写，文件比较乱，后面会整理的。
 
 <h1 align=center>Euclidea 解题参考</h1>
 
