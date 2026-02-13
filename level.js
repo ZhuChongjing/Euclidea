@@ -89,6 +89,18 @@ document.addEventListener('DOMContentLoaded', function() {
         'SquareInSquare': ['5.9', 'Square in Square'],
         'CircleInOutSquare': ['5.10', 'Circle Tangent to Square Side'],
         'HexagonBySide': ['5.11', 'Regular Hexagon'],
+        // Zeta
+        'PtSymmetry': ['6.1', 'Point Reflection'],
+        'MirrorSeg': ['6.2', 'Line Reflection'],
+        'ShiftSegment': ['6.3', 'Shift Segment'],
+        'GivenAngleBisector': ['6.4', 'Given Angle Bisector'],
+        'CircleByRadius': ['6.5', 'Non-collapsing Compass'],
+        'TranslateSegment': ['6.6', 'Translate Segment'],
+        'TriangleBySides': ['6.7', 'Triangle by Three Sides'],
+        'ParallelogramBySP': ['6.8', 'Parallelogram'],
+        '9PointCircle': ['6.9', 'Nine Point Circle'],
+        '4SymmetricLines': ['6.10', 'Symmetry of Four Lines'],
+        'ParallelogramBy3Midpoints': ['6.11', 'Parallelogram by Three Midpoints'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
