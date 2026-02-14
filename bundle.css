@@ -1,0 +1,2666 @@
+@font-face {
+    font-family: "华文中宋";
+    src: local("华文中宋"),url(/Euclidea/assets/STZHONGS.TTF) format("truetype");
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: local("Consolas"),url(/Euclidea/assets/Consolas.ttf) format("truetype");
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Light"),local("OpenSans-Light"),url(/Euclidea/assets/opensanslight.woff2) format("woff2"),url(/Euclidea/assets/opensanslight.woff) format("woff"),url(/Euclidea/assets/opensanslight.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Light Italic"),local("OpenSansLight-Italic"),url(/Euclidea/assets/opensanslightitalic.woff2) format("woff2"),url(/Euclidea/assets/opensanslightitalic.woff) format("woff"),url(/Euclidea/assets/opensanslightitalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans"),local("OpenSans"),url(/Euclidea/assets/opensans.woff2) format("woff2"),url(/Euclidea/assets/opensans.woff) format("woff"),url(/Euclidea/assets/opensans.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Italic"),local("OpenSans-Italic"),url(/Euclidea/assets/opensansitalic.woff2) format("woff2"),url(/Euclidea/assets/opensansitalic.woff) format("woff"),url(/Euclidea/assets/opensansitalic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(/Euclidea/assets/opensanssemibold.woff2) format("woff2"),url(/Euclidea/assets/opensanssemibold.woff) format("woff"),url(/Euclidea/assets/opensanssemibold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Semibold Italic"),local("OpenSans-SemiboldItalic"),url(/Euclidea/assets/opensanssemibolditalic.woff2) format("woff2"),url(/Euclidea/assets/opensanssemibolditalic.woff) format("woff"),url(/Euclidea/assets/opensanssemibolditalic.ttf) format("truetype");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(/Euclidea/assets/opensansbold.woff2) format("woff2"),url(/Euclidea/assets/opensansbold.woff) format("woff"),url(/Euclidea/assets/opensansbold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Bold Italic"),local("OpenSans-BoldItalic"),url(/Euclidea/assets/opensansbolditalic.woff2) format("woff2"),url(/Euclidea/assets/opensansbolditalic.woff) format("woff"),url(/Euclidea/assets/opensansbolditalic.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Extrabold"),local("OpenSans-Extrabold"),url(/Euclidea/assets/opensansextrabold.woff2) format("woff2"),url(/Euclidea/assets/opensansextrabold.woff) format("woff"),url(/Euclidea/assets/opensansextrabold.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local("Open Sans Extrabold Italic"),local("OpenSans-ExtraboldItalic"),url(/Euclidea/assets/opensansextrabolditalic.woff2) format("woff2"),url(/Euclidea/assets/opensansextrabolditalic.woff) format("woff"),url(/Euclidea/assets/opensansextrabolditalic.ttf) format("truetype");
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Thin"),local("Roboto-Thin"),url(/Euclidea/assets/Robotothin.woff2) format("woff2"),url(/Euclidea/assets/Robotothin.woff) format("woff"),url(/Euclidea/assets/Robotothin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Thin Italic"),local("Roboto-ThinItalic"),url(/Euclidea/assets/Robotothinitalic.woff2) format("woff2"),url(/Euclidea/assets/Robotothinitalic.woff) format("woff"),url(/Euclidea/assets/Robotothinitalic.ttf) format("truetype");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Light"),local("Roboto-Light"),url(/Euclidea/assets/Robotolight.woff2) format("woff2"),url(/Euclidea/assets/Robotolight.woff) format("woff"),url(/Euclidea/assets/Robotolight.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Light Italic"),local("Roboto-LightItalic"),url(/Euclidea/assets/Robotolightitalic.woff2) format("woff2"),url(/Euclidea/assets/Robotolightitalic.woff) format("woff"),url(/Euclidea/assets/Robotolightitalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto"),local("Roboto-Regular"),url(/Euclidea/assets/Roboto.woff2) format("woff2"),url(/Euclidea/assets/Roboto.woff) format("woff"),url(/Euclidea/assets/Roboto.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Italic"),local("Roboto-Italic"),url(/Euclidea/assets/Robotoitalic.woff2) format("woff2"),url(/Euclidea/assets/Robotoitalic.woff) format("woff"),url(/Euclidea/assets/Robotoitalic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Medium"),local("Roboto-Medium"),url(/Euclidea/assets/Robotomedium.woff2) format("woff2"),url(/Euclidea/assets/Robotomedium.woff) format("woff"),url(/Euclidea/assets/Robotomedium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Medium Italic"),local("Roboto-MediumItalic"),url(/Euclidea/assets/Robotomediumitalic.woff2) format("woff2"),url(/Euclidea/assets/Robotomediumitalic.woff) format("woff"),url(/Euclidea/assets/Robotomediumitalic.ttf) format("truetype");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Bold"),local("Roboto-Bold"),url(/Euclidea/assets/Robotobold.woff2) format("woff2"),url(/Euclidea/assets/Robotobold.woff) format("woff"),url(/Euclidea/assets/Robotobold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Bold Italic"),local("Roboto-BoldItalic"),url(/Euclidea/assets/Robotobolditalic.woff2) format("woff2"),url(/Euclidea/assets/Robotobolditalic.woff) format("woff"),url(/Euclidea/assets/Robotobolditalic.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Black"),local("Roboto-Black"),url(/Euclidea/assets/Robotoblack.woff2) format("woff2"),url(/Euclidea/assets/Robotoblack.woff) format("woff"),url(/Euclidea/assets/Robotoblack.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local("Roboto Black Italic"),local("Roboto-BlackItalic"),url(/Euclidea/assets/Robotoblackitalic.woff2) format("woff2"),url(/Euclidea/assets/Robotoblackitalic.woff) format("woff"),url(/Euclidea/assets/Robotoblackitalic.ttf) format("truetype");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local("Roboto Slab Thin"),local("RobotoSlab-Thin"),url(/Euclidea/assets/robotoslabthin.woff2) format("woff2"),url(/Euclidea/assets/robotoslabthin.woff) format("woff"),url(/Euclidea/assets/robotoslabthin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local("Roboto Slab Light"),local("RobotoSlab-Light"),url(/Euclidea/assets/robotoslablight.woff2) format("woff2"),url(/Euclidea/assets/robotoslablight.woff) format("woff"),url(/Euclidea/assets/robotoslablight.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local("Roboto Slab Regular"),local("RobotoSlab-Regular"),url(/Euclidea/assets/robotoslabregular.woff2) format("woff2"),url(/Euclidea/assets/robotoslabregular.woff) format("woff"),url(/Euclidea/assets/robotoslabregular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local("Roboto Slab Bold"),local("RobotoSlab-Bold"),url(/Euclidea/assets/robotoslabbold.woff2) format("woff2"),url(/Euclidea/assets/robotoslabbold.woff) format("woff"),url(/Euclidea/assets/robotoslabbold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes arrow-down {
+    100% {
+        opacity: .2;
+        transform: translateY(20%)
+    }
+}
+
+@keyframes arrow-top {
+    0% {
+        transform: translateY(0) rotate(180deg)
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(20%) rotate(180deg)
+    }
+}
+
+@keyframes star {
+    0% {
+        transform: scale(0)
+    }
+
+    70% {
+        transform: scale(1.15)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+    display: block
+}
+
+audio,canvas,progress,video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],template {
+    display: none
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: rgba(255,255,255,0);
+    cursor: default
+}
+
+body {
+    font-size: 100%;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased
+}
+
+a {
+    background: 0 0
+}
+
+:active,:focus,:hover {
+    outline: 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+ol,ul {
+    list-style: none
+}
+
+pre {
+    -moz-tab-size: 4;
+    tab-size: 4;
+    white-space: pre-wrap
+}
+
+q {
+    quotes: '\201C' '\201D' '\2018' '\2019'
+}
+
+img {
+    border: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button,input {
+    line-height: normal
+}
+
+button,select {
+    text-transform: none
+}
+
+button {
+    overflow: visible
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],html input[disabled] {
+    cursor: default
+}
+
+input[type=checkbox],input[type=radio] {
+    box-sizing: border-box
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    border: none;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+button,input,select[multiple],textarea {
+    background-image: none
+}
+
+input,select,textarea {
+    border-radius: 0;
+    box-shadow: none
+}
+
+input,textarea {
+    resize: none;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text
+}
+
+[placeholder]:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+[placeholder]:focus::placeholder {
+    color: transparent
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes arrow-down {
+    100% {
+        opacity: .2;
+        transform: translateY(20%)
+    }
+}
+
+@keyframes arrow-top {
+    0% {
+        transform: translateY(0) rotate(180deg)
+    }
+
+    100% {
+        opacity: .2;
+        transform: translateY(20%) rotate(180deg)
+    }
+}
+
+@keyframes star {
+    0% {
+        transform: scale(0)
+    }
+
+    70% {
+        transform: scale(1.15)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.spinner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    text-align: center
+}
+
+.spinner-animation {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #5aa0ff;
+    border-radius: 0;
+    animation: rotate 3s infinite
+}
+
+.spinner-animation:after,.spinner-animation:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #f8ad00;
+    content: '';
+    animation: rotate 3s infinite reverse
+}
+
+.spinner-animation:before {
+    border-color: #fff;
+    width: 22px;
+    height: 22px;
+    animation: rotate 2s infinite
+}
+
+.spinner-text {
+    margin-top: 15px;
+    color: #505050;
+    font-weight: 900
+}
+
+.tool-button[_ngcontent-c2] {
+    display: inline-block;
+    z-index: 1;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.icon-ABisectTool,.icon-ABisectTool\:regular,
+.icon-CircleTool,.icon-CircleTool\:regular,
+.icon-CompassTool,.icon-CompassTool\:regular,
+.icon-HandTool,.icon-HandTool\:regular,
+.icon-IntersectTool,.icon-IntersectTool\:regular,
+.icon-LineTool,.icon-LineTool\:regular,
+.icon-PBisectTool,.icon-PBisectTool\:regular,
+.icon-ParallelTool,.icon-ParallelTool\:regular,
+.icon-PerpTool,.icon-PerpTool\:regular,
+.icon-PointTool,.icon-PointTool\:regular {
+    background-repeat: no-repeat;
+    background-position: 0 0
+}
+
+.icon-ABisectTool:hover,.icon-ABisectTool\:regular:hover,
+.icon-CircleTool:hover,.icon-CircleTool\:regular:hover,
+.icon-CompassTool:hover,.icon-CompassTool\:regular:hover,
+.icon-HandTool:hover,.icon-HandTool\:regular:hover,
+.icon-IntersectTool:hover,.icon-IntersectTool\:regular:hover,
+.icon-LineTool:hover,.icon-LineTool\:regular:hover,
+.icon-PBisectTool:hover,.icon-PBisectTool\:regular:hover,
+.icon-ParallelTool:hover,.icon-ParallelTool\:regular:hover,
+.icon-PerpTool:hover,.icon-PerpTool\:regular:hover,
+.icon-PointTool:hover,.icon-PointTool\:regular:hover {
+    background-position: 0 -48px
+}
+
+.active.icon-ABisectTool,.active.icon-ABisectTool\:regular,
+.active.icon-CircleTool,.active.icon-CircleTool\:regular,
+.active.icon-CompassTool,.active.icon-CompassTool\:regular,
+.active.icon-HandTool,.active.icon-HandTool\:regular,
+.active.icon-IntersectTool,.active.icon-IntersectTool\:regular,
+.active.icon-LineTool,.active.icon-LineTool\:regular,
+.active.icon-PBisectTool,.active.icon-PBisectTool\:regular,
+.active.icon-ParallelTool,.active.icon-ParallelTool\:regular,
+.active.icon-PerpTool,.active.icon-PerpTool\:regular,
+.active.icon-PointTool,.active.icon-PointTool\:regular {
+    background-position: 0 -96px
+}
+
+.icon-ABisectTool,.icon-ABisectTool\:regular {
+    background-image: url(/Euclidea/assets/ABisectTool.svg);
+}
+
+.icon-CircleTool,.icon-CircleTool\:regular {
+    background-image: url(/Euclidea/assets/CircleTool.svg)
+}
+
+.icon-CompassTool,.icon-CompassTool\:regular {
+    background-image: url(/Euclidea/assets/CompassTool.svg)
+}
+
+.icon-PointTool,.icon-PointTool\:regular {
+    background-image: url(/Euclidea/assets/PointTool.svg)
+}
+
+.icon-HandTool,.icon-HandTool\:regular {
+    background-image: url(/Euclidea/assets/HandTool.svg)
+}
+
+.icon-IntersectTool,.icon-IntersectTool\:regular {
+    background-image: url(/Euclidea/assets/IntersectTool.svg)
+}
+
+.icon-LineTool,.icon-LineTool\:regular {
+    background-image: url(/Euclidea/assets/LineTool.svg)
+}
+
+.icon-PBisectTool,.icon-PBisectTool\:regular {
+    background-image: url(/Euclidea/assets/PBisectTool.svg)
+}
+
+.icon-ParallelTool,.icon-ParallelTool\:regular {
+    background-image: url(/Euclidea/assets/ParallelTool.svg)
+}
+
+.icon-PerpTool,.icon-PerpTool\:regular {
+    background-image: url(/Euclidea/assets/PerpTool.svg)
+}
+
+.icon-FinishedButton, .icon-FinishedButton\:regular {
+    background-image: url(/Euclidea/assets/FinishedButton.svg)
+}
+
+.icon-3CirclesCIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-3CirclesIIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-3rdProportionalIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-4SymmetricLinesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-4thProportionalIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-60RotationCWIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-90RotationCCWIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-9PointCircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-AEqualSegments1Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-AMinPerimeterIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-APtOnCircleMaxDistIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ATrByCentroidIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ATrByCircumcenterIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ATrByOrthocenterIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle15Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle30Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle45Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle54Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle60DropIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle60Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Angle75Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-AngleIsoscelesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-AngleMidpointIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-AngleTrisection54Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-AnnulusIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ArbelosIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-BisectAngleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CDoubleSegIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CIntersectCLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CIntersectXIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CMidpointIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CTranslateCircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CenterOfRotationIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CentroidOfQuadrilateralIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Chord3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ChordMidpointIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Circle3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleByRadiusIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleCenterIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleInAngleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleInOutSquareIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleInRhombusIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleInSquareIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleInTriangleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentCCIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentCCwCenterLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentCLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentCPwCenterLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentLLLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentPLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CircleTangentPPLIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CleaverIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Cut2RectanglesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-CutRectangleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Divide3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-DoubleAngleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-DropPerpIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-EqualSegments3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Equidistant2Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Equidistant3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-EquidistantParallelIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Equilateral3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-EquilateralAboutCircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-EquilateralByCentroid2PIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-EquilateralInCircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-EquilateralOnCCIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ErectPerpIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ExcircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-GeometricMeanIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-GivenAngleBisectorIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-GoldenSectionIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-HarmonicMeanIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-HashIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-HeronIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-HexagonBySideIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-HypotenuseAndAltitudeIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-HypotenuseAndLegIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-IncenterIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-InnerTangentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-InteriorAnglesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-L3ParallelIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LDivide3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LDropPerp2Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LDropPerpIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LMidpointIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LReflectionIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LTangentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LineAlongPointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LineBetweenPointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-LozengeIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-MidpointIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-MirrorSegIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-NapoleonIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-OctagonBySideIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-OrthicTriangleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-OuterTangentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ParallelIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Parallelogram3VIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ParallelogramBy3MidpointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ParallelogramBySPIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ParallelogramVOn4LinesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-PentagonIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-PerimeterBisectorIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-PerpBisectorIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-PtSymmetryIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-RTrBy2SidePointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-RTrByHypAndTangentPtIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-RhombusInRectIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-RhombusInTriangleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Secant2Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Segment6Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ShiftAngleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-ShiftSegmentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Sqrt2Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Sqrt3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareAboutCircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareBy4PtIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareByAdjMidpointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -990px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareByOppMidpointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1100px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareInCircleByPtIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1210px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareInCircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1320px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareInSquareIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1430px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SquareInTriangleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1540px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-SumSquaresIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1650px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-T1_LineIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-T2_CircleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-T3_PointIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TBisectAngleIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TCircleByRadiusIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TDropPerpIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TEquilateralIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TIntersectIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1760px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TMoveIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: 0 -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TParallelIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -260px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TPerpBisectorIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -520px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-Tangent1Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -780px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TangentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1040px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TorricelliPtIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1300px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrByAltitudeBasesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1560px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrByExcircleCentersIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -1820px -1870px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrByIncircleBasesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px 0;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrBySideAndCentroidIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -110px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TranslateSegmentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -220px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrapezoidCut3Icon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -330px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrapezoidCutIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -440px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrapezoidGeomMeanIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -550px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TrapezoidHarmMeanIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -660px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TriangleByMidpointsIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -770px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TriangleBySidesIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -880px;
+    width: 260px;
+    height: 110px
+}
+
+.icon-TriangleMidSegmentIcon {
+    background-image: url(/Euclidea/assets/levelsSprite.png);
+    background-position: -2080px -990px;
+    width: 260px;
+    height: 110px
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
+    .icon-3CirclesCIcon {
+        background-image:url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-3CirclesIIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-3rdProportionalIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-4SymmetricLinesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-4thProportionalIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-60RotationCWIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-90RotationCCWIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-9PointCircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-AEqualSegments1Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-AMinPerimeterIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-APtOnCircleMaxDistIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ATrByCentroidIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ATrByCircumcenterIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ATrByOrthocenterIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle15Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle30Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle45Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle54Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle60DropIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle60Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Angle75Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-AngleIsoscelesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-AngleMidpointIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-AngleTrisection54Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-AnnulusIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ArbelosIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-BisectAngleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CDoubleSegIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CIntersectCLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CIntersectXIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CMidpointIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CTranslateCircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CenterOfRotationIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CentroidOfQuadrilateralIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Chord3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ChordMidpointIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Circle3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleByRadiusIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleCenterIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleInAngleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleInOutSquareIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleInRhombusIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleInSquareIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleInTriangleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentCCIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentCCwCenterLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentCLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentCPwCenterLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentLLLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentPLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CircleTangentPPLIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CleaverIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Cut2RectanglesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-CutRectangleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Divide3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-DoubleAngleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-DropPerpIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-EqualSegments3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Equidistant2Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Equidistant3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-EquidistantParallelIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Equilateral3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-EquilateralAboutCircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-EquilateralByCentroid2PIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-EquilateralInCircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-EquilateralOnCCIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ErectPerpIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ExcircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-GeometricMeanIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-GivenAngleBisectorIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-GoldenSectionIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-HarmonicMeanIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-HashIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-HeronIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-HexagonBySideIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-HypotenuseAndAltitudeIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-HypotenuseAndLegIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-IncenterIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-InnerTangentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-InteriorAnglesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-L3ParallelIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LDivide3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LDropPerp2Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LDropPerpIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LMidpointIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LReflectionIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LTangentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LineAlongPointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LineBetweenPointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-LozengeIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-MidpointIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-MirrorSegIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-NapoleonIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-OctagonBySideIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-OrthicTriangleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-OuterTangentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ParallelIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Parallelogram3VIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ParallelogramBy3MidpointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ParallelogramBySPIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ParallelogramVOn4LinesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-PentagonIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-PerimeterBisectorIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-PerpBisectorIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-PtSymmetryIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-RTrBy2SidePointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-RTrByHypAndTangentPtIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-RhombusInRectIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-RhombusInTriangleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Secant2Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Segment6Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ShiftAngleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-ShiftSegmentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Sqrt2Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Sqrt3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareAboutCircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareBy4PtIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareByAdjMidpointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareByOppMidpointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareInCircleByPtIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareInCircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareInSquareIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SquareInTriangleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-SumSquaresIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-T1_LineIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-T2_CircleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-T3_PointIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TBisectAngleIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TCircleByRadiusIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TDropPerpIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TEquilateralIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TIntersectIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TMoveIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TParallelIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TPerpBisectorIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-Tangent1Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TangentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TorricelliPtIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrByAltitudeBasesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrByExcircleCentersIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrByIncircleBasesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrBySideAndCentroidIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TranslateSegmentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrapezoidCut3Icon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrapezoidCutIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrapezoidGeomMeanIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TrapezoidHarmMeanIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TriangleByMidpointsIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TriangleBySidesIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+
+    .icon-TriangleMidSegmentIcon {
+        background-image: url(/Euclidea/assets/levelsSprite-2x.png);
+        background-size: 2340px 1980px
+    }
+}
+
+.svg-Alpha {
+    background: url(/Euclidea/assets/sprite.svg) 25.5814% 0 no-repeat
+}
+
+.svg-Alpha-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Beta {
+    background: url(/Euclidea/assets/sprite.svg) 0 75.1938% no-repeat
+}
+
+.svg-Beta-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Chi {
+    background: url(/Euclidea/assets/sprite.svg) 0 25.5814% no-repeat
+}
+
+.svg-Chi-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Delta {
+    background: url(/Euclidea/assets/sprite.svg) 24.8062% 25.5814% no-repeat
+}
+
+.svg-Delta-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Epsilon {
+    background: url(/Euclidea/assets/sprite.svg) 50.3876% 0 no-repeat
+}
+
+.svg-Epsilon-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Eta {
+    background: url(/Euclidea/assets/sprite.svg) 50.3876% 24.8062% no-repeat
+}
+
+.svg-Eta-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Gamma {
+    background: url(/Euclidea/assets/sprite.svg) 0 50.3876% no-repeat
+}
+
+.svg-Gamma-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Iota {
+    background: url(/Euclidea/assets/sprite.svg) 24.8062% 50.3876% no-repeat
+}
+
+.svg-Iota-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Kappa {
+    background: url(/Euclidea/assets/sprite.svg) 49.6124% 50.3876% no-repeat
+}
+
+.svg-Kappa-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Lambda {
+    background: url(/Euclidea/assets/sprite.svg) 75.1938% 0 no-repeat
+}
+
+.svg-Lambda-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Mu {
+    background: url(/Euclidea/assets/sprite.svg) 75.1938% 24.8062% no-repeat
+}
+
+.svg-Mu-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Nu {
+    background: url(/Euclidea/assets/sprite.svg) 75.1938% 49.6124% no-repeat
+}
+
+.svg-Nu-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Omega {
+    background: url(/Euclidea/assets/sprite.svg) 74.4186% 100% no-repeat
+}
+
+.svg-Omega-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Omicron {
+    background: url(/Euclidea/assets/sprite.svg) 24.8062% 75.1938% no-repeat
+}
+
+.svg-Omicron-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-PhiI {
+    background: url(/Euclidea/assets/sprite.svg) 49.6124% 75.1938% no-repeat
+}
+
+.svg-PhiI-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Pi {
+    background: url(/Euclidea/assets/sprite.svg) 74.4186% 75.1938% no-repeat
+}
+
+.svg-Pi-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Psi {
+    background: url(/Euclidea/assets/sprite.svg) 100% 0 no-repeat
+}
+
+.svg-Psi-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Rho {
+    background: url(/Euclidea/assets/sprite.svg) 100% 24.8062% no-repeat
+}
+
+.svg-Rho-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Sigma {
+    background: url(/Euclidea/assets/sprite.svg) 100% 49.6124% no-repeat
+}
+
+.svg-Sigma-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Tau {
+    background: url(/Euclidea/assets/sprite.svg) 100% 74.4186% no-repeat
+}
+
+.svg-Tau-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Theta {
+    background: url(/Euclidea/assets/sprite.svg) 0 100% no-repeat
+}
+
+.svg-Theta-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Upsilon {
+    background: url(/Euclidea/assets/sprite.svg) 24.8062% 100% no-repeat
+}
+
+.svg-Upsilon-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Xi {
+    background: url(/Euclidea/assets/sprite.svg) 49.6124% 100% no-repeat
+}
+
+.svg-Xi-dims {
+    width: 64px;
+    height: 64px
+}
+
+.svg-Zeta {
+    background: url(/Euclidea/assets/sprite.svg) 0 0 no-repeat
+}
+
+.svg-Zeta-dims {
+    width: 66px;
+    height: 66px
+}
+
+body {
+    font-family: Roboto,sans-serif;
+    background-repeat: repeat;
+    background-color: #23272b
+}
+
+body.scroll-hidden {
+    overflow: hidden
+}
+
+body.disable {
+    pointer-events: none
+}
+
+.float-left {
+    float: left!important
+}
+
+.float-right {
+    float: right!important
+}
+
+.bold {
+    font-weight: 900
+}
+
+#scene_wrapper {
+    overflow: hidden
+}
+
+#scene_wrapper canvas {
+    overflow: hidden
+}
+
+/*# sourceMappingURL=bundle.css.map*/
