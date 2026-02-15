@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', function() {
         '9PointCircle': ['6.9', 'Nine Point Circle'],
         '4SymmetricLines': ['6.10', 'Symmetry of Four Lines'],
         'ParallelogramBy3Midpoints': ['6.11', 'Parallelogram by Three Midpoints'],
+        // Eta
+        'SumSquares': ['7.1', 'Sum of Areas of Squares'],
+        'Annulus': ['7.2', 'Annulus'],
+        'Angle75': ['7.3', 'Angle of 75°'],
+        'Equidistant3': ['7.4', 'Line Equidistant from Three Points'],
+        'Heron': ['7.5', "Heron's Problem"],
+        'Circle3': ['7.6', 'Circumscribed Circle'],
+        'CircleInTriangle': ['7.7', 'Inscribed Circle'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {

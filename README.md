@@ -1,4 +1,4 @@
-![制作进度_Sheet1(1)](https://github.com/user-attachments/assets/0bbb52d1-fb0a-48ab-b2f0-e1d728782ba7)
+![制作进度_Sheet1](https://github.com/user-attachments/assets/94cc3767-a362-438a-8adc-c4ea8bb74f63)
 
 <h1 align=center>Euclidea 解题参考</h1>
 

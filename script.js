@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ".container",
         {
 
-            clipPath: "polygon(0 48.5%, 100% 48.5%, 100% 51.5%, 0 51.5%)",
+            clipPath: "polygon(0 49%, 100% 49%, 100% 51%, 0 51%)",
             duration: 1,
         },
         3
