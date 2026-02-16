@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         'Eta': '37',
         'Theta': '27',
         'Iota': '32',
-        'Kappa': '?',
-        'Lambda': '?',
-        'Mu': '?',
-        'Nu': '?',
-        'Xi': '?',
-        'Omicron': '?'
+        'Kappa': '42',
+        'Lambda': '34',
+        'Mu': '35',
+        'Nu': '34',
+        'Xi': '19',
+        'Omicron': '37'
     }
     const currentFilePath = window.location.pathname;
     for (pack of currentFilePath.split('/')) {

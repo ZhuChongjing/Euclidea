@@ -109,6 +109,10 @@ document.addEventListener('DOMContentLoaded', function() {
         'Heron': ['7.5', "Heron's Problem"],
         'Circle3': ['7.6', 'Circumscribed Circle'],
         'CircleInTriangle': ['7.7', 'Inscribed Circle'],
+        'CircleTangentLLL': ['7.8', 'Circle Tangent to Three Lines'],
+        'AngleMidpoint': ['7.9', 'Segment by Midpoint'],
+        'AngleIsosceles': ['7.10', 'Isosceles Triangle'],
+        'Excircle': ['7.11', 'Excircle'],
     }
     for (const level in levelName) {
         if (currentFileName.startsWith(level)) {
